@@ -1,0 +1,19 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientLib.all  @categories = 'vertical-carousel'}">
+</sly></sly>
+
+<div id="spinner"> 
+  Loading...
+</div>
+<sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+<div id="carousel"  data-sly-list.items = "${car.slides.listChildren}">
+
+  		<img src="${items.file}">${items.title}</img>
+    </div></sly>
+
+</div>
+
+<div class="buttons">
+  <button id="prev">&uarr; Prev</button>
+  <button id="next">&darr; Next</button>
+</div>

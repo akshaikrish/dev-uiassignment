@@ -1,0 +1,39 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientLib.all  @categories = 'color-random'}">
+</sly></sly>
+
+<div class="carousel slide article-slide" id="article-photo-carousel">
+  <h3 class="widget-title" style="border-bottom-color:#289dcc; margin-right: 0;"><span style="background-color:#289dcc;">Random</span></h3>  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner cont-slider">
+  <sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+      <sly data-sly-list.items = "${car.slides.listChildren}">
+    <div class="item">
+      <img alt="" title="" src="${items.file}">
+    </div>
+    </sly></sly>
+  </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators random">
+    <sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+      <sly data-sly-list.items = "${car.slides.listChildren}">
+    <li class="indica" data-slide-to="0" data-target="#article-photo-carousel">
+      <img alt="" src="${items.subfile}">
+    </li>
+    </sly></sly>
+  </ol>
+</div>
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $('.item:first').addClass('active');
+        console.log("Class added!!")
+    });
+ 
+
+    </script>

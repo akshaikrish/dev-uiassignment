@@ -1,0 +1,34 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientLib.all  @categories = 'color-slider'}">
+</sly></sly>
+
+<!--/*<div class="slider">
+    <sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+	<div class="slide-track" data-sly-list.items = "${car.slides.listChildren}">
+		<div class="slide">
+    		<a href="${items.linkpath}">
+                <img src="${items.file}" height="100" width="250" alt="" />
+                <p>${items.title}</p>
+    		</a>
+		</div>
+
+	</div></sly>
+</div>*/-->
+<div class="owl-carousel owl-theme owl-loaded">
+    <div class="owl-stage-outer">
+        <div class="owl-stage">
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+            <div class="owl-item">...</div>
+        </div>
+    </div>
+    <div class="owl-nav">
+        <div class="owl-prev">prev</div>
+        <div class="owl-next">next</div>
+    </div>
+    <div class="owl-dots">
+        <div class="owl-dot active"><span></span></div>
+        <div class="owl-dot"><span></span></div>
+        <div class="owl-dot"><span></span></div>
+    </div>
+</div>

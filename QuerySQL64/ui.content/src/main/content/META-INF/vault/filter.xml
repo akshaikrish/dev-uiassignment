@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/QuerySQL64"/>
+    <filter root="/content/QuerySQL64"/>
+    <filter root="/content/dam/QuerySQL64"/>
+</workspaceFilter>

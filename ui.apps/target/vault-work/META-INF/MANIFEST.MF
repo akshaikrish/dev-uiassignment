@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: colormag - UI apps
+Content-Package-Roots: /apps/colormag,/etc/packages/adobe/cq60/core.wc
+ m.components.all-2.3.2.zip,/etc/packages/adobe/cq60/core.wcm.componen
+ ts.examples-2.3.2.zip
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: AMRITA-AKSHAI
+Implementation-Vendor-Id: com.colormag
+Content-Package-Type: mixed
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_221
+Content-Package-Description: UI apps package for colormag
+Content-Package-Id: colormag:com.colormag.ui.apps:1.0-SNAPSHOT
+

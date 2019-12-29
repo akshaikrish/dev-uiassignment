@@ -1,0 +1,23 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientLib.css  @categories = 'color-football'}">
+</sly></sly>
+
+<section>
+
+
+<div class="container">
+    <h3 class="widget-title"><span>Football</span></h3>
+	<sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+      <sly data-sly-list.items = "${car.slides.listChildren}">
+        <article class="post">
+          <a href="${items.linkpath}"><img src="${items.file}" alt="Article thumbnail" /></a>
+    		<div class="highlight-article">
+          <h3><a href="${items.linkpath}">${items.title}</a></h3>
+    
+          <p>${items.description}</p>
+    	</div>
+        </article>
+          </sly></sly>
+
+</div>
+</section>

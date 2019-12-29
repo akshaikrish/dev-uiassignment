@@ -1,0 +1,39 @@
+
+<section>
+<h3 class="widget-title"><span>Women</span></h3>    
+<div class="container">
+  <div class="row">
+    <div class="col main-article">
+     <figure class="highlight-image">
+    		<a href="https://www.google.com/" title="${properties.title1}">
+				<img src="${properties.fileReference1}"  title="${properties.title1}"/>
+    		</a>
+    	</figure>
+    	<div class="article-content">
+			<h3 class="entry-title">
+				<a href="https://www.google.com/">${properties.title1}</a>
+    		</h3>
+    		<p>${properties.description1}</p>
+    	</div>
+    </div>
+
+
+  </div>
+    <div class="row">
+		<div class="col">
+      <sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+      <sly data-sly-list.items = "${car.slides.listChildren}">
+        <article class="post-athletics">
+          <a href="${items.linkpath}"><img src="${items.file}" alt="Article thumbnail" /></a>
+    		<div class="highlight-article">
+          <h3><a href="${items.linkpath}">${items.title}</a></h3>
+    
+
+    	</div>
+        </article>
+          </sly></sly>
+    </div>
+
+    </div>
+</div>
+</section>

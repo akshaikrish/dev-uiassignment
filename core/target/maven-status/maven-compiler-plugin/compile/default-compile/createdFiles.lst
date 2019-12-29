@@ -1,0 +1,10 @@
+com\colormag\core\models\CarouselListing.class
+com\colormag\core\impl\ArticleListImpl.class
+com\colormag\core\services\ArticleInterface.class
+com\colormag\core\schedulers\SimpleScheduledTask.class
+com\colormag\core\schedulers\SimpleScheduledTask$Config.class
+com\colormag\core\package-info.class
+com\colormag\core\servlets\SimpleServlet.class
+com\colormag\core\listeners\SimpleResourceListener.class
+com\colormag\core\filters\LoggingFilter.class
+com\colormag\core\models\HelloWorldModel.class

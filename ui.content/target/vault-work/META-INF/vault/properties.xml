@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>colormag - UI content</comment>
+<entry key="createdBy">AMRITA-AKSHAI</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="name">com.colormag.ui.content</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2019-12-29T17:28:46.793+05:30</entry>
+<entry key="groupId">com.colormag</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="packageType">content</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">colormag</entry>
+<entry key="description">UI content package for colormag</entry>
+<entry key="artifactId">com.colormag.ui.content</entry>
+</properties>

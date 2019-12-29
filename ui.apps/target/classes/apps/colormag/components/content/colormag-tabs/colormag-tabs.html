@@ -1,0 +1,48 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientLib.all  @categories = 'color-tabs'}">
+</sly></sly>
+
+
+
+<section class="wrapper">
+	<ul class="tabs">
+		<li class="active"><i class="fa fa-star" aria-hidden="true">Popular</i></li>
+		<li><i class="fa fa-history" aria-hidden="true">Recent</i></li>
+		<li><i class="fa fa-comment" aria-hidden="true">Comment</i></li>
+	</ul>
+
+	<ul class="tab__content">
+		<li class="active">
+			<div class="content__wrapper">
+				<sly data-sly-use.car = "com.auki.core.models.TabListing">
+                  <sly data-sly-list.items = "${car.popular.listChildren}">
+                    <article class="post-athletics">
+                      <a href="${items.linkpath}"><img src="${items.file}" alt="Article thumbnail" /></a>
+                        <div class="highlight-article">
+                      <h3><a href="${items.linkpath}">${items.title}</a></h3>
+                    </div>
+                </article>
+            </sly></sly>
+	      </div>
+		</li>
+		<li>
+			<div class="content__wrapper">
+				<sly data-sly-use.car = "com.auki.core.models.TabListing">
+                  <sly data-sly-list.items = "${car.recent.listChildren}">
+                    <article class="post-athletics">
+                      <a href="${items.linkpath}"><img src="${items.file}" alt="Article thumbnail" /></a>
+                        <div class="highlight-article">
+                      <h3><a href="${items.linkpath}">${items.title}</a></h3>
+                    </div>
+                </article>
+            </sly></sly>
+		  </div>
+		</li>
+		<li>
+			<div class="content__wrapper">
+				No comments
+
+			</div>
+		</li>
+	</ul>
+</section>

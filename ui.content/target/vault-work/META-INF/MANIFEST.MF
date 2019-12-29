@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: colormag - UI content
+Content-Package-Roots: /conf/colormag,/content/colormag,/content/dam/c
+ olormag
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: AMRITA-AKSHAI
+Implementation-Vendor-Id: com.colormag
+Content-Package-Type: content
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_221
+Content-Package-Description: UI content package for colormag
+Content-Package-Id: colormag:com.colormag.ui.content:1.0-SNAPSHOT
+

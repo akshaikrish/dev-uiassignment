@@ -1,0 +1,5 @@
+com\colormag\core\servlets\SimpleServletTest.class
+com\colormag\core\schedulers\SimpleScheduledTaskTest.class
+com\colormag\core\filters\LoggingFilterTest.class
+com\colormag\core\listeners\SimpleResourceListenerTest.class
+com\colormag\core\models\HelloWorldModelTest.class

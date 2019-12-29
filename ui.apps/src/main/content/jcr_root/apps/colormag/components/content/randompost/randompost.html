@@ -1,0 +1,12 @@
+<h3 class="widget-title" style="border-bottom-color:#289dcc; margin-right: 0;"><span style="background-color:#289dcc;">Random Post</span></h3> 
+ <div class="random-posts">   
+<sly data-sly-use.car = "com.silversea.core.models.CarouselListing">
+      <sly data-sly-list.items = "${car.slides.listChildren}">
+        <article class="post-athletics">
+          <a href="${items.linkpath}"><img src="${items.file}" alt="Article thumbnail" /></a>
+    		<div class="highlight-article">
+          <h3><a href="${items.linkpath}">${items.title}</a></h3>
+        </div>
+    </article>
+</sly></sly>
+ </div>   

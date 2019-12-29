@@ -1,0 +1,57 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientLib.css  @categories = 'color-highlight'}">
+</sly></sly>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+		<figure class="highlight-image">
+    		<a href="https://www.google.com/" title="${properties.title1}">
+				<img src="${properties.fileReference1}"  title="${properties.title1}"/>
+    		</a>
+    	</figure>
+    	<div class="article-content">
+			<h3 class="entry-title">
+				<a href="https://www.google.com/">${properties.title1}</a>
+    		</h3>
+    	</div>
+	 </div>
+   <div class="col">
+		<figure class="highlight-image">
+    		<a href="https://www.google.com/" title="${properties.title2}">
+				<img src="${properties.fileReference2}"  title="${properties.title2}"/>
+    		</a>
+    	</figure>
+    	<div class="article-content">
+			<h3 class="entry-title">
+				<a href="https://www.google.com/">${properties.title2}</a>
+    		</h3>
+    	</div>
+	 </div>
+    <div class="w-100"></div>
+    <div class="col">
+		<figure class="highlight-image">
+    		<a href="https://www.google.com/" title="${properties.title3}">
+				<img src="${properties.fileReference3}"  title="${properties.title3}"/>
+    		</a>
+    	</figure>
+    	<div class="article-content">
+			<h3 class="entry-title">
+				<a href="https://www.google.com/">${properties.title3}</a>
+    		</h3>
+    	</div>
+	 </div>
+    <div class="col">
+		<figure class="highlight-image">
+    		<a href="https://www.google.com/" title="${properties.title4}">
+				<img src="${properties.fileReference4}"  title="${properties.title4}"/>
+    		</a>
+    	</figure>
+    	<div class="article-content">
+			<h3 class="entry-title">
+				<a href="https://www.google.com/">${properties.title4}</a>
+    		</h3>
+    	</div>
+	 </div>
+  </div>
+</div>
